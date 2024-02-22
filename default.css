@@ -285,6 +285,7 @@ h6 { font-size: 16px;}
     grid-template-columns: repeat(auto-fit, 320px);
     justify-content: center;
     padding-bottom: 50px;
+    padding-top: 50px;
     gap: 50px;
     
     background-color: var(--secondaryColor);
