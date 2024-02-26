@@ -13,6 +13,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 body *{
@@ -199,13 +200,14 @@ h6 { font-size: 16px;}
 }
 #preview-shadow{
     background-color: var(--previewShadow);
-    width: 240px;
+    width: 280px;
     height: 280px;
     padding-left: 20px;
     padding-top: 20px;
 }
 #preview{
-    width: 240px;
+    width: 280px;
+    height: 280px;
     border: 1.5 solid #17a2b8;
     background-color: var(--previewBackground);
     padding: 10px;
@@ -380,6 +382,10 @@ h6 { font-size: 16px;}
     width: 80%;
     height: auto;
     text-align: center;
+}
+
+.bullet-list {
+    font-size: large;
 }
 @media screen and (max-width: 1200px){
     .main-container{
