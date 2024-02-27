@@ -200,14 +200,14 @@ h6 { font-size: 16px;}
 }
 #preview-shadow{
     background-color: var(--previewShadow);
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
     padding-left: 20px;
     padding-top: 20px;
 }
 #preview{
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
     border: 1.5 solid #17a2b8;
     background-color: var(--previewBackground);
     padding: 10px;
@@ -241,13 +241,14 @@ h6 { font-size: 16px;}
     right: -5px;
 }
 .about-wrapper{
+    text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 30px;
     padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 10px;
     align-content: center;
     background-color: var(--mainColor);
     border: 1px solid var(--borderColor);
@@ -257,8 +258,9 @@ h6 { font-size: 16px;}
     border-radius: 5px 5px;
 }
 #skills{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    text-align: center;
+    width: 95%;
     background-color: var(--previewShadow);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
@@ -271,7 +273,7 @@ h6 { font-size: 16px;}
 }
 
 #social-img{
-	width: 99%;
+	width: 94%;
     height: auto;
     object-fit: cover;
     border: 2px solid var(--borderColor);
@@ -282,12 +284,15 @@ h6 { font-size: 16px;}
 }
 .post-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
-    justify-content: center;
+
+    grid-template-columns: repeat(auto-fit, 300px);
     padding-bottom: 50px;
     padding-top: 50px;
-    gap: 50px;
-    
+    gap: 40px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
@@ -297,6 +302,7 @@ h6 { font-size: 16px;}
 }
 .post{
     margin-top: 10px;
+    width: 96%;
     border-radius: 5px;
     border: 5px solid var(--borderColor);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
@@ -382,6 +388,10 @@ h6 { font-size: 16px;}
     width: 80%;
     height: auto;
     text-align: center;
+}
+
+#contributions {
+    font-size: small;
 }
 
 .bullet-list {
