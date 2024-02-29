@@ -260,7 +260,7 @@ h6 { font-size: 16px;}
 #skills{
     display: grid;
     text-align: center;
-    width: 95%;
+    width: 100%;
     background-color: var(--previewShadow);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
@@ -273,7 +273,7 @@ h6 { font-size: 16px;}
 }
 
 #social-img{
-	width: 94%;
+	width: 100%;
     height: auto;
     object-fit: cover;
     border: 2px solid var(--borderColor);
