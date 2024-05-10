@@ -268,12 +268,12 @@ h6 { font-size: 16px;}
 }
 .social-links{
 	display: grid;
-	align-content: center;
+	align-content: space-between;
 	text-align: center;
 }
 
 #social-img{
-	width: 100%;
+	width: 99%;
     height: auto;
     object-fit: cover;
     border: 2px solid var(--borderColor);
@@ -391,7 +391,7 @@ h6 { font-size: 16px;}
 }
 
 #contributions {
-    font-size: small;
+    font-size: normal;
 }
 
 .bullet-list {
