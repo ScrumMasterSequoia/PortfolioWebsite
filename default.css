@@ -261,7 +261,7 @@ h6 { font-size: 16px;}
     display: grid;
     text-align: center;
     width: 100%;
-    background-color: var(--previewShadow);
+    background-color: var(--secondaryColor);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
