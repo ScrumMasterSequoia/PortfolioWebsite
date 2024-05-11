@@ -208,7 +208,7 @@ h6 { font-size: 16px;}
 #preview{
     width: 260px;
     height: 260px;
-    border: 1.5 solid #17a2b8;
+    border: 1.5px solid black;
     background-color: var(--previewBackground);
     padding: 10px;
     
@@ -220,7 +220,7 @@ h6 { font-size: 16px;}
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid black;
     background-color: #fff;
     position: absolute;
 }
