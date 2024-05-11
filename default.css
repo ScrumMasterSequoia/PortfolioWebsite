@@ -139,8 +139,8 @@ h6 { font-size: 16px;}
 #profile_pic{
     display: block;
     margin: 0 auto;
-    height: 200px;
-    width: 200px;
+    height: 270px;
+    width: 270px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
 
@@ -400,7 +400,7 @@ h6 { font-size: 16px;}
         width: 95%;
     }
 }
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
     .intro-wrapper{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -412,4 +412,4 @@ h6 { font-size: 16px;}
     .right-column{
         justify-content: center;
     }
-}
+} */
