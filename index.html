@@ -3,16 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SequoiaKanies.com</title>
+    <title>Sequoia Kanies</title>
     <link rel="icon" type="image/svg+xml" href="https://sequoia-portfolio.s3.amazonaws.com/favicon.ico" />
-    
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-   
     <link rel="stylesheet" type="text/css" href="default.css">
-    
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+
+
+
+<!--     
+Would need to add manifest.json and service-worker.js files to make this a PWA. Test using Lighthouse
+
+
+    PWA (Progressive Web Application) tags
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name = "viewport" content = "width = 320, initial-scale = 1, user-scalable = no">
+
+    <meta name="apple-mobile-web-app-title" content="Sequoia Kanies">
+    <meta name="apple-touch-startup-image" content="favicon.png">
+
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="apple-touch-icon" href="images/EyeTerraEdit.png">
+    <link rel="mask-icon" href="favicon.png" color="#000000">
+    <meta name="msapplication-TileImage" content="margarita.png">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    Facebook Meta Tags
+    <meta property="og:url"  content="https://sequoiakanies.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sequoia Kanies">
+    <meta property="og:description" content="Software Engineer Portfolio Website">
+    <meta property="og:image" content="images/EyeTerraEdit.png">
+ -->
+
+
 
 </head>
 <body>
@@ -24,30 +54,36 @@
             </div>
 
             <div class="intro-wrapper">
-                <div class="nav-wrapper"></div>
                     <div class="nav-wrapper">
+
                         <div class="dots-wrapper">
                             <div id="dot-1" class="browser-dot"></div>
                             <div id="dot-2" class="browser-dot"></div>
                             <div id="dot-3" class="browser-dot"></div>
                         </div>
+
                         <ul id="navigation">
                             <a class="contact-form" href="mailto:kaniessequoia@gmail.com"> Contact </a>
                         </ul>
-                    </div>
-                <div class="left-column">
-                    <img id="profile_pic" src="images/Sequoia.jpg">
-                    <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
-                    <div id="theme-options-wrapper">
-                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                        <div data-mode="red" id="red-mode" class="theme-dot"></div>
-                        <div data-mode="black" id="black-mode" class="theme-dot"></div>
-                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+
                     </div>
 
-                    <p id="settings-note" >*Theme settings will be saved</p>
-                </div>
+                    <div class="main-container" style="margin: 20px">
+                        <!-- <div class="left-column"> -->
+                        <img id="profile_pic" src="images/Profile.png">
+                        <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+                        <div id="theme-options-wrapper">
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="red" id="red-mode" class="theme-dot"></div>
+                            <div data-mode="black" id="black-mode" class="theme-dot"></div>
+                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                        <!-- </div> -->
+
+                        </div>
+
+                    </div>
+<!-- 
                 <div class="right-column">
                      <div id="preview-shadow">   
                         <div id="preview">
@@ -62,6 +98,7 @@
                         </div>
                     </div>
                 </div>
+                 -->
             </div>
         </div>
     </section>
@@ -73,13 +110,9 @@
                   
 
                 <!-- <p>Software Engineer:  -->
-                <img style="height: 175px; border-radius: 10px; border: 3px solid black;" src="images/EyeTerraEdit.png" alt="EyeTerraEdit">
-                    <a target="_blank" href="Resume.pdf" style="font-size: larger;"><br />
-                        <u><b>Download Resume</b></u></a>
+                <!-- <img style="height: 175px; border-radius: 10px; border: 3px solid black;" src="images/EyeTerraEdit.png" alt="EyeTerraEdit"> -->
                 <!-- </p> -->
 
-                <br />
-                <br />
                 
                 <h3>Education</h3>
                 <p>University of Tennessee at Chattanooga <br/><br/>
@@ -87,6 +120,7 @@
                        Major: Software Systems<br/><br/>
                        Minor: Business Administration
                </p>
+               <br />
                <br />
 
                 <div id="skills">
@@ -111,6 +145,10 @@
                         <li>ProgressiveWebApp</li>
                     </ul>
                 </div>
+                <br />
+                <a target="_blank" href="Resume.pdf" style="font-size: x-large;"><br />
+                    <u><b>Download Resume</b></u></a>
+
             </div>
            
         
@@ -213,24 +251,41 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- 
                 <div>
                     <div class="post">
-                        <!-- <a target="_blank" href=""> -->
+                        comment
+                        <a target="_blank" href="">
+
                             <img class="thumbnail" src="images/WitchesBrew.png"></a> 
                         <div class="post-preview">
                             <h6 class="post-title">WitchesBrew</h6>
                             <p class="post-intro">Text prompt image generation app using OpenAI Dalle3</p>
                             <p class="post-intro" style="color: red">System currently down due to opensource payment exploitation. Needs user login and paywall</p>
-                            <!-- <a target="_blank" href="https://supplementappv1.netlify.app/">See Project</a><br><br>
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/SupplementAppV1">See Source Code</a> -->
+                            comment
+                            <a target="_blank" href="https://supplementappv1.netlify.app/">See Project</a><br><br>
+                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/SupplementAppV1">See Source Code</a>
+                        
                         </div>
                     </div>
                 </div>
+                 -->
             </div>
 
             <h3 style="text-align: center;">Featured Projects</h3>
             <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <a target="_blank" href="http://movie-search-bucket.s3-website-us-east-1.amazonaws.com/"><img class="thumbnail" src="images/MovieSearch.jpg"></a>
+                        <div class="post-preview">
+                            <h6 class="post-title">Movie Search</h6>
+                            <p class="post-intro">Search an OMDB database for movies and games</p>
+                            <a target="_blank" href="http://movie-search-bucket.s3-website-us-east-1.amazonaws.com/">See Project</a><br><br>
+                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/MovieSearchReact">See Source Code</a>
+                        </div>
+                    </div>
+                </div>
 
                 <div>
                     <div class="post">
@@ -295,18 +350,6 @@
                             <p class="post-intro">Neural Network designed to match text to background color</p>
                             <a target="_blank" href="https://color-guesser-neural-net.netlify.app/">See Project</a><br><br>
                             <a target="_blank" href="https://github.com/ScrumMasterSequoia/brain-js">See Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="http://movie-search-bucket.s3-website-us-east-1.amazonaws.com/"><img class="thumbnail" src="images/MovieSearch.jpg"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">Movie Search</h6>
-                            <p class="post-intro">Search an OMDB database for movies and games</p>
-                            <a target="_blank" href="http://movie-search-bucket.s3-website-us-east-1.amazonaws.com/">See Project</a><br><br>
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/MovieSearchReact">See Source Code</a>
                         </div>
                     </div>
                 </div>
