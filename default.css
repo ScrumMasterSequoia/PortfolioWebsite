@@ -49,7 +49,6 @@ h6 { font-size: 16px;}
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
     border: 1.5px solid var(--borderColor);
-    border-bottom: 0px;
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
@@ -59,7 +58,6 @@ h6 { font-size: 16px;}
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
     border: 1.5px solid var(--borderColor);
-    border-bottom: 0px;
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
