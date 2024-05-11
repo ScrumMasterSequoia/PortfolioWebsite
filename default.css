@@ -242,7 +242,7 @@ h6 { font-size: 16px;}
 }
 .about-wrapper{
     text-align: center;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-top: 30px;
     padding-bottom: 50px;
@@ -260,7 +260,7 @@ h6 { font-size: 16px;}
 #skills{
     display: grid;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     background-color: var(--secondaryColor);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
