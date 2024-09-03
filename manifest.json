@@ -7,21 +7,21 @@
     "id": "/",
     "icons": [
         {
-            "src": "./images/favicon152.png",
-            "sizes": "152x152",
+            "src": "./images/sequoiatree.png",
+            "sizes": "408x408",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "./images/favicon152.png",
-            "sizes": "152x152",
+            "src": "./images/sequoiatree.png",
+            "sizes": "408x408",
             "type": "image/png",
             "purpose": "any"
         }
     ],
     "orientation": "portrait-primary",
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
     "prefer_related_applications": false,
     "screenshots": [
         {

@@ -4,7 +4,7 @@ self.addEventListener('install', e => {
             caches.open('static').then(cache => {
                 return cache.addAll([
                     './',
-                    './images/favicon152.png',
+                    './images/sequoiatree.png',
                     './images/EyeTerraEdit.png',
                     './default.css',
                     './index.html',
