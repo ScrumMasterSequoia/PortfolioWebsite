@@ -1,0 +1,41 @@
+{
+    "name": "Sequoia",
+    "short_name": "Sequoia",
+    "description": "Sequoia Kanies's software engineering portfolio website",
+    "display": "standalone",
+    "start_url": ".",
+    "id": "/",
+    "icons": [
+        {
+            "src": "./images/favicon152.png",
+            "sizes": "152x152",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./images/favicon152.png",
+            "sizes": "152x152",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "orientation": "portrait-primary",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "prefer_related_applications": false,
+    "screenshots": [
+        {
+            "src": "./images/EyeTerraEdit.png",
+            "sizes": "600x409",
+            "type": "image/png",
+            "label": "Sequoia"
+        },
+        {
+            "src": "./images/EyeTerraEdit.png",
+            "sizes": "600x409",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Sequoia"
+        }
+    ]
+}

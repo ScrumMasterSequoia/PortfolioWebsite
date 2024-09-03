@@ -34,3 +34,12 @@ function setTheme(mode){
     }
     localStorage.setItem('theme', mode)
 }
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js").then(registration => {
+        console.log("script.js - Service Worker Registered!");
+        console.log(registration);
+    }).catch(error => {
+        console.log("Service Worker Registration Failed!" + error);
+    });
+}
