@@ -68,6 +68,13 @@ h6 { font-size: 16px;}
     align-content: center;
 }
 
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 10px
+}
+
 .greeting-wrapper{
     display: grid;
     text-align: center;
