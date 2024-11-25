@@ -42,7 +42,30 @@
 
 
 <body>
+
+    <div class="menu-container">
+        
+        <button class="menu-button" id="menu-button" aria-label="Menu">
+            <img class="pic" src="images/MenuIcon.png" alt="menu"/>
+        </button>
     
+        <div id="menu-dropdown" class="menu-dropdown">
+          <ul class="menu-list">
+            <li><a href="#">Top</a></li>
+            <li><a href="#skllc">Sequoia Kanies LLC</a></li>
+            <li><a href="#freelance">Freelance</a></li>
+            <li><a href="#professional">Professional</a></li>
+            <li><a href="#opensource">Open Source</a></li>
+            <li><a href="#ai">AI</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#starter">Starter</a></li>
+            <li><a href="#personal">Personal</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+    </div>
+
     <section class="s2">
         <div class="main-container">
             <div class="greeting-wrapper">
@@ -66,14 +89,16 @@
         </div>
     </section>
 
-    <section class="s1">
+    <section id="skllc" class="s1">
             <div class="main-container" style="text-align: center;">
                 <div class="business-card-container">
                     <h3 style="margin-bottom: 10px;">Sequoia Kanies LLC</h3>
                     <p style="font-size: smaller; margin-top: 0;">Ringgold, GA</p><br>
                     <img id="cardback" src="images/BusinessCardFront.png">
                     <img id="cardfront" src="images/BusinessCardBack.png">
-                </div>
+                    <a id="resume" target="_blank" href="resume.pdf" style="font-size: xx-large;"><br/><br/>
+                        <u><b>Download Resume</b></u></a>
+                    </div>
             </div>
     </section>
 
@@ -112,11 +137,9 @@
                         <li>Advanced Spanish</li>
                         <li>Beginner Russian</li>
                         <li>Carpentry</li>
-                        <br>
                     </ul>
-                </div><br />
-                <a target="_blank" href="resume.pdf" style="font-size: x-large;"><br />
-                    <u><b>Download Resume</b></u></a>
+                </div>
+                
             </div>
            
         </div>
@@ -128,7 +151,7 @@
     <section class="s1">
         <div class="main-container">
 
-            <h3 style="text-align: center;">Find me on Fiverr!</h3>
+            <h3 id="freelance" style="text-align: center;">Freelance Platforms</h3>
 
             <div class="post-wrapper">
                 <div>
@@ -143,7 +166,7 @@
                 </div>
             </div>
 
-            <h3 style="text-align: center;">Professional</h3>
+            <h3 id="professional" style="text-align: center;">Professional</h3>
 
             <div class="post-wrapper">
                 <div>
@@ -205,7 +228,7 @@
 
             </div>
 
-            <h3 style="text-align: center;">OpenSource</h3>
+            <h3 id="opensource" style="text-align: center;">Open Source</h3>
 
                 <div class="post-wrapper">
 
@@ -222,7 +245,7 @@
                     
                 </div>
 
-            <h3 style="text-align: center;">Artificial Intelligence</h3>
+            <h3 id="ai" style="text-align: center;">Artificial Intelligence</h3>
 
             <div class="post-wrapper">
 
@@ -278,7 +301,7 @@
     
         </div>
 
-            <h3 style="text-align: center;">Featured Projects</h3>
+            <h3 id="featured" style="text-align: center;">Featured Projects</h3>
 
                 <div class="post-wrapper">
 
@@ -344,7 +367,7 @@
 
                 </div> 
 
-            <h3 style="text-align: center;">Starter Projects</h3>
+            <h3 id="starter" style="text-align: center;">Starter Projects</h3>
 
             <div class="post-wrapper">
 
@@ -402,7 +425,7 @@
             </div>
         
 
-            <h3 style="text-align: center;">Personal Projects</h3>
+            <h3 id="personal" style="text-align: center;">Personal Projects</h3>
 
             <div class="post-wrapper">
 
@@ -418,8 +441,6 @@
                         </div>
                     </div>
                 </div>
-                
-                
 
                 <div>
                     <div class="post">
@@ -529,7 +550,7 @@
 
     <section class="s2">
         <div class="main-container">
-            <h3 style="text-align: center;">Get In Touch</h3>
+            <h3 id="contact" style="text-align: center;">Get In Touch</h3>
             
             <form style="text-align: center;" id="about-wrapper">
                 

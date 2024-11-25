@@ -39,11 +39,99 @@ h3 { font-size: 28px;}
 h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
+.menu-container {
+position: fixed;
+top: 0.85em;
+left: 1em;
+z-index: 999;
+display: inline-block;
+}
+.menu-button {
+height: 16px;
+width: 16px;
+border-radius: 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+cursor: pointer;
+padding: 10px;
+background-color: #00000000;
+color: #ffffffc0;
+border: none;
+outline: none;
+}
+.menu-button > img {
+width: 16px;
+height: 16px;
+margin: 0;
+padding: 10px;
+border-radius: 5px;
+-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.7);
+-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.7);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.7);
+background-color: #00000080;
+}
+.menu-dropdown {
+float: left;
+position: relative;
+border-radius: 5px;
+background-color: #00000080;
+opacity: 0;
+visibility: hidden;
+transition: width 0.4s, opacity 0.1s, visibility 0.1s;
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.85);
+width: 0px;
+top: 35px;
+left: -8px;
+z-index: 1000;
+position: absolute;
+}
+.menu-dropdown.open {
+width: 180px;
+opacity: 1;
+visibility: visible;
+transition: width 0.1s, opacity 0.4s, visibility 0.4s;
+}
+.menu-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.menu-list li a {
+font-family: 'Russo One', sans-serif;
+display: block;
+padding: 6px 10px;
+text-decoration: none;
+font-size: small;
+color: #ffffffc0;
+transition: background-color 0.2s;
+}
+.menu-list li a:hover {
+background-color: #00000050;
+}
+.pic {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-size:contain;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    object-fit: cover;
+    /* border: 2px solid var(--borderColor); */
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+  }
 .s1{
     background-color: var(--mainColor);
     overflow: auto;
     border: 1.5px solid var(--borderColor);
-    border-bottom: none;
+    border-top: none;
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
@@ -51,7 +139,7 @@ h6 { font-size: 16px;}
     background-color: var(--secondaryColor);
     overflow: auto;
     border: 1.5px solid var(--borderColor);
-    border-bottom: none;
+    border-top: none;
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
