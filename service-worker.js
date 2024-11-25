@@ -1,3 +1,5 @@
+const versionNumber = 1;
+
 self.addEventListener('install', e => {
     try {
         e.waitUntil(
@@ -6,8 +8,7 @@ self.addEventListener('install', e => {
                     './',
                     './images/sequoiatree.png',
                     './images/EyeTerraEdit.png',
-                    './default.css',
-                    './index.html',
+                    './default.css'
                 ]);
             })
         )
