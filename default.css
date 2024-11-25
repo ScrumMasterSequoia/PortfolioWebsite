@@ -41,14 +41,14 @@ h5 { font-size: 20px;}
 h6 { font-size: 16px;}
 .menu-container {
 position: fixed;
-top: 0.85em;
-left: 1em;
+top: 1.05em;
+left: 1.2em;
 z-index: 999;
 display: inline-block;
 }
 .menu-button {
-height: 16px;
-width: 16px;
+height: 20px;
+width: 20px;
 border-radius: 5px;
 justify-content: center;
 align-items: center;
@@ -61,8 +61,8 @@ border: none;
 outline: none;
 }
 .menu-button > img {
-width: 16px;
-height: 16px;
+width: 20px;
+height: 20px;
 margin: 0;
 padding: 10px;
 border-radius: 5px;
@@ -79,7 +79,7 @@ background-color: #00000080;
 opacity: 0;
 visibility: hidden;
 transition: width 0.4s, opacity 0.1s, visibility 0.1s;
-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.85);
+box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.7);
 width: 0px;
 top: 35px;
 left: -8px;
@@ -100,9 +100,9 @@ padding: 0;
 .menu-list li a {
 font-family: 'Russo One', sans-serif;
 display: block;
-padding: 6px 10px;
+padding: 10px 15px;
 text-decoration: none;
-font-size: small;
+/* font-size: small; */
 color: #ffffffc0;
 transition: background-color 0.2s;
 }
