@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://sequoia-portfolio.s3.amazonaws.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sequoia Kanies LLC</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+
+  </head>
+  <body>
+    <div id="app">
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input">
+                <div class="error-name"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input">
+                <div class="error-email"></div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea"></textarea>
+                <div class="error-message"></div>
+              </div>
+              
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+    </div>
+    <script type="module" src="./form.js"></script>
+  </body>
+</html>
