@@ -315,7 +315,7 @@ background-color: #00000050;
 }
 .contact-button{
     display: block;
-	max-width: 600px;
+	max-width: 250px;
 	margin: 0 auto;
     margin-bottom: 10px;
 	border: 1px solid var(--borderColor);

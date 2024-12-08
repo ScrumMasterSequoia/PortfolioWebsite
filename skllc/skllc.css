@@ -10,6 +10,8 @@
   --previewShadow: #1b1919;
   --buttonColor: #1e1e1e;
   --linkColor: #17a2b8;
+  --background-color: #00000080;
+
 }
 
 body {
@@ -60,7 +62,6 @@ h1 {
   margin: 0;
   padding: 0;
   background: none;
-  font-size: 5rem;
   font-weight: 500;
 }
 
@@ -96,14 +97,14 @@ h1 {
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.7);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.7);
-  background-color: #00000080;
+  background-color: var(--background-color);
 }
 
 .menu-dropdown {
   float: left;
   position: relative;
   border-radius: 5px;
-  background-color: #00000080;
+  background-color: var(--background-color);
   opacity: 0;
   visibility: hidden;
   transition: width 0.4s, opacity 0.1s, visibility 0.1s;
@@ -174,14 +175,18 @@ h1 {
   overflow: auto;
   /* border: 1.5px solid var(--borderColor); */
   border-top: none;
-  border-bottom: 1.5px solid var(--borderColor);
+  /* border-bottom: 1.5px solid var(--borderColor); */
   padding-top: 1rem;
 }
 
 .main-container {
-  /* width: 95%; */
-  margin: 0 auto;
+  background-color: var(--background-color);
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1em;
   align-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
 }
 
 .business-card-container {

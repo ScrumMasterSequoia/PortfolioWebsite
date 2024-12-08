@@ -8,12 +8,16 @@
 --previewBackground:rgba(95, 94, 94, 0.8); 
 --previewShadow: #1b1919; 
 --buttonColor: #1e1e1e;
+--faded: #00000080;
+--background-color: rgba(0, 0, 0, 0.8)
+
 }
 h3 { font-size: 28px;}
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
+    margin-top: 0;
 }
 p, li, span, label, input, textArea{
     color: var(--secondaryText);
@@ -24,8 +28,9 @@ a{
     color: #17a2b8;
 }
 body {
+background: url(../skllc/images/carvedbackdrop.png) no-repeat center center;
 margin: 0;
-padding: 1rem;
+/* padding: 1rem; */
 text-align: center;
 font-family: 'Arial', sans-serif;
 background-color: #000;
@@ -57,6 +62,7 @@ font-weight: 500;
 color: #000000;
 }
 .menu-container {
+background-color: var(--faded);
 position: fixed;
 top: 1.05em;
 left: 1.2em;
@@ -86,13 +92,13 @@ border-radius: 5px;
 -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.7);
 -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.7);
 box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.7);
-background-color: #00000080;
+background-color: var(--faded);
 }
 .menu-dropdown {
 float: left;
 position: relative;
 border-radius: 5px;
-background-color: #00000080;
+background-color: var(--faded);
 opacity: 0;
 visibility: hidden;
 transition: width 0.4s, opacity 0.1s, visibility 0.1s;
@@ -135,7 +141,7 @@ height: auto;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-top: 1rem;
+/* margin-top: 1rem; */
 padding: 1rem;
 object-fit: cover;
 /* border: 2px solid var(--borderColor); */
@@ -156,7 +162,7 @@ padding-top: 1rem;
 */
 }
 .s2{
-background-color: var(--secondaryColor);
+/* background-color: var(--secondaryColor); */
 overflow: auto;
 margin-bottom: 1em;
 /* border: 1.5px solid var(--borderColor); 
@@ -167,7 +173,9 @@ padding-top: 1rem;
 }
 .main-container{
 /* width: 95%; */
-margin: 0 auto;
+background-color: var(--background-color);
+margin-left: 1em;
+margin-right: 1em;
 padding: 1em;
 align-content: center;
 border-radius: 5px;
@@ -207,7 +215,7 @@ align-content: center;
 }
 .contact-button{
     display: block;
-	max-width: 600px;
+	max-width: 250px;
 	margin: 0 auto;
     margin-bottom: 10px;
     font-family: 'Russo One', sans-serif;
@@ -225,3 +233,20 @@ align-content: center;
 	align-content: space-between;
 	text-align: center;
 }
+#theme-options-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.theme-dot{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    margin: 2px;
+    margin-top: 0px;
+    background-color: #000;
+    /* border: 2px solid var(--themeDotBorder); */
+    /* -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75); */
+    cursor: pointer;
+  }
