@@ -18,6 +18,8 @@ body {
   width: 100%;
   height: 100%;
   background: url(images/carvedbackdrop.png) no-repeat center center;
+  /* background: url(images/carvedmini.png) no-repeat center center; */
+
   background-size: cover;
   /* background-color: transparent; */
   margin: 0;
@@ -27,7 +29,6 @@ body {
   background-color: #000;
   /* background: url(../images/HiddenCharmSoaps.png) no-repeat center center fixed; */
   background-attachment: fixed;
-  background-size: cover;
   width: auto;
   height: auto;
   top: 0;
@@ -260,3 +261,50 @@ a{
 .services-card{
   padding: 0.5em;
 }
+
+@media screen and (max-width: 540px) {
+  body {
+    background-color: #f0f0f0; /* Fallback background color */
+    background: url(images/carvedmini.png) no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+}
+
+/* @media screen and (max-width: 450px) {
+  body {
+    font-size: small;
+    background-position: top;
+    background-size: contain;
+    background-attachment: scroll;
+    padding: 50vw;
+  }
+  
+  .main-container {
+    position: absolute;
+    font-size: small;
+    background-color: #000;
+    top: 200px;
+    opacity: 1;
+    margin: 0;
+    left: 0;
+    padding: 20px;
+    height: auto;
+    width: auto;
+  }
+  
+  header > h1 {
+    font-size: 2.5rem;
+  }
+
+  #about > img {
+    margin-top: 0;
+  }
+
+  #about > h2 {
+    font-size: 1rem;
+  }
+  #about {
+    font-size: 0.8rem;
+  }
+} */
