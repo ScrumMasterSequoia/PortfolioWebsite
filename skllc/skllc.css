@@ -265,7 +265,7 @@ a{
 @media screen and (max-width: 540px) {
   body {
     background-color: #f0f0f0; /* Fallback background color */
-    background: url(images/carvedMini.png) no-repeat center center;
+    background: url(images/carvedNarrow.png) no-repeat center center;
     background-size:cover;
     background-attachment: fixed;
   }
