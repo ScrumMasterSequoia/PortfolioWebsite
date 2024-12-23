@@ -253,9 +253,9 @@ align-content: center;
 @media screen and (max-width: 540px) {
     body {
       position: relative;
-      background-color: #000000;
+      background-color: #00000000;
+      background: none;
     }
-  
     body::before {
       content: "";
       position: fixed;
