@@ -248,13 +248,21 @@ align-content: center;
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75); */
     cursor: pointer;
-  }
-  @media screen and (max-width: 540px) {
-    body {
-      background: url(../skllc/images/carvedNarrow.png) no-repeat center center;
-      background-size:cover;
-      background-color: #000000;
-      background-attachment: fixed;
-    }
 }
+@media screen and (max-width: 540px) {
+    body {
+        background: url(../skllc/images/TheCarvedNarrow.png) no-repeat center center;
+        background-size: contain; /* Ensure the image scales proportionally */
+      background-attachment: fixed;
+      background-color: #000000;
+    }
+  }
   
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        background: url(../skllc/images/TheCarvedNarrow.png) no-repeat center center;
+        background-size: contain; /* Ensure the image scales proportionally */
+      background-attachment: fixed;
+      background-color: #000000;
+    }
+  }
