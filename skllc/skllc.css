@@ -271,11 +271,11 @@ a{
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+/* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
     background: url(images/TheCarvedNarrow.png) no-repeat center center;
-    background-size: contain; /* Ensure the image scales proportionally */
+    background-size: contain; 
     background-attachment: fixed;
     background-color: #000000;
   }
-}
+} */
