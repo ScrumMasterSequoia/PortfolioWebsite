@@ -272,7 +272,7 @@ a{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: url(images/TheCarvedNarrow.png) no-repeat top center;
     background-size: contain;
     z-index: -1; /* Ensure it is behind other content */
