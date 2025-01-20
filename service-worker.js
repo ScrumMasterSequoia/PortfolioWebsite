@@ -1,4 +1,4 @@
-const versionNumber = 2.3;
+const versionNumber = 3.0;
 
 self.addEventListener('install', e => {
     try {
@@ -6,9 +6,9 @@ self.addEventListener('install', e => {
             caches.open('static').then(cache => {
                 return cache.addAll([
                     './',
-                    './images/sequoiatree.png',
-                    './images/EyeTerraEdit.png',
-                    './default.css'
+                    './portfolio/images/sequoiatree.png',
+                    './portfolio/images/EyeTerraEdit.png',
+                    './skllc.css'
                 ]);
             })
         )

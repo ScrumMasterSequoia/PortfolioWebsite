@@ -1,28 +1,25 @@
-<!-- Background picture? The Carved art? -->
-<!-- add swipe down at top to reload for phone/PWA? or some notification to close and reopen app when its outdated? but how? -->
-<!-- deal with projects saying NOT SECURE Amazon AWS hosting updated to netlify for projects
-
-https://www.upwork.com/resources/must-have-website-features
-
--->
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequoia Kanies LLC</title>
+    <link rel="icon" type="image/svg+xml" href="https://sequoia-portfolio.s3.amazonaws.com/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="skllc.css">
+</head> -->
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About & Portfolio</title>
+    <title>Sequoia Kanies LLC</title>
     <link rel="icon" type="image/svg+xml" href="https://sequoia-portfolio.s3.amazonaws.com/favicon.ico" />
-    <!-- tempted to change the icon to this below. But it didn't work easily
-    <link rel="icon" type="image/png" href="./images/sequoiatree.png" /> -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="default.css">
-    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="skllc.css">
 
     <!-- PWA (Progressive Web Application) tags -->
     <link rel="manifest" href="./manifest.json">
@@ -34,607 +31,314 @@ https://www.upwork.com/resources/must-have-website-features
     <meta name = "viewport" content = "width = 320, initial-scale = 1, user-scalable = no">
 
     <meta name="apple-mobile-web-app-title" content="Sequoia">
-    <meta name="apple-touch-startup-image" content="./images/sequoiatree.png">
+    <meta name="apple-touch-startup-image" content="Sequoia">
 
     <meta name="apple-touch-fullscreen" content="yes">
-    <link rel="apple-touch-icon" href="./images/sequoiatree.png">
-    <link rel="mask-icon" href="./images/sequoiatree.png" color="#000000">
-    <meta name="msapplication-TileImage" content="margarita.png">
+    <link rel="apple-touch-icon" href="portfolio/images/sequoiatree.png">
+    <link rel="mask-icon" href="portfolio/images/sequoiatree.png" color="#000000">
     <meta name="msapplication-TileColor" content="#000000">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url"  content="https://sequoiakanies.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sequoia Kanies">
-    <meta property="og:description" content="Software Engineer Portfolio Website">
-    <meta property="og:image" content="images/EyeTerraEdit.png">
+    <meta property="og:description" content="Software Engineering Company">
+    <meta property="og:image" content="portfolio/images/EyeTerraEdit.png">
 </head>
 
 
 <body>
 
+    <header>
     <div class="menu-container">
         
         <button class="menu-button" id="menu-button" aria-label="Menu">
-            <img class="pic" src="images/MenuIcon.png" alt="menu"/>
+            <img class="pic" src="portfolio/images/MenuIcon.png" alt="menu"/>
         </button>
     
         <div id="menu-dropdown" class="menu-dropdown">
           <ul class="menu-list">
-            <li><a href="skllc/skllc.html">Home</a></li>
+            <!-- <li><a href="#">Top</a></li> -->
+            <!-- <li><a href="services.html">Services</a></li> -->
+            <li><a href="portfolio/portfolio.html">Portfolio</a></li>
+            <!-- <li><a href="">About</a></li> -->
             <li><a href="contact-us/contact-us.html">Contact Us</a></li>
-            <!-- <li><a href="skllc/services.html">Services</a></li> -->
-            <li><a href="skllc/FAQs.html">FAQs</a></li>
-            <li style="padding-bottom: 0;"><a href="">Portfolio:</a></li><br>
+            <li><a href="FAQs.html">FAQs</a></li>
         </ul>
-        <ul class="menu-list" style="font-size: smaller; line-height: .5em; padding-left: 1em;">
-            <li><a style="padding-top: 0;" href="#freelance">Freelance</a></li>
-            <li><a href="#professional">Professional</a></li>
-            <li><a href="#opensource">Open Source</a></li>
-            <li><a href="#ai">AI</a></li>
-            <li><a href="#featured">Featured</a></li>
-            <li><a href="#templates">Templates</a></li>
-            <li><a href="#personal">Personal</a></li>
-          </ul>
         </div>
 
     </div>
 
-    <div style="position: fixed; top: 10px; right: 10px;">
-        <a href="../skllc/skllc.html" class="link" style="background: none">
-            <button style="cursor: pointer; background: transparent; padding: 4px; padding-bottom: 0px; border-radius: 50%;">
-                <img src="../images/faviconcorner.png" alt="home">
-            </button>
-        </a>
+    <div id="theme-options-wrapper">
+        <!-- 
+        <div data-mode="light" id="light-mode" class="theme-dot" ></div>
+        <div data-mode="dark" id="dark" class="theme-dot"></div> 
+        -->
+        <a href="#" class="link" style="background: none"> <button  style="cursor: pointer; background: transparent; padding: 4px; padding-bottom: 0px; margin-top: -13px; border-radius: 50%;"><img src="portfolio/images/faviconcorner.png" alt="home"></button> </a>
     </div>
 
+    </header>
 
-    <section class="s2">
-        <div class="main-container">
-            <div class="greeting-wrapper">
-                <h1>Sequoia Kanies</h1>
-            </div>
+    <div style="margin-bottom: 19em; padding-top: 7em;">
+        <br><br><br>
+        <img src="../images/favicon152.png" alt="logo"/>
+        <h1 style="margin-bottom: 5em;"><i>Sequoia Kanies LLC</i></h1>
+        <br><br>
+        <h4 style="padding: 1em;"><i> - "Striving alongside small business owners to bring beautiful ideas to life!"</i></h4>
+       
+    </div>
 
-            <div class="main-container" style="margin-top: 20px; margin-bottom: 20px">
-                <img id="profile_pic" src="images/Sequoia.jpg">
-                <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
-                <div id="theme-options-wrapper">
-                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                    <div data-mode="red" id="red-mode" class="theme-dot"></div>
-                    <div data-mode="black" id="black-mode" class="theme-dot"></div>
-                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-                    <!-- I want to add a random color mode button with a rainbow icon. Randomly generate a color and a complement, or allow weird color combinations -->
-                </div>
-
-            </div>
  
-        </div>
-    </section>
 
-    <!-- <section id="skllc" class="s1">
-            <div class="main-container" style="text-align: center;">
-                <div class="business-card-container">
-                    <h3 style="margin-bottom: 10px;">Sequoia Kanies LLC</h3>
-                    <p style="font-size: smaller; margin-top: 0;">Ringgold, GA</p><br>
-                    <img id="cardback" src="images/BusinessCardFront.png">
-                    <img id="cardfront" src="images/BusinessCardBack.png">
-                    <a id="resume" target="_blank" href="resume.pdf" style="font-size: xx-large;"><br/><br/>
-                        <u><b>Download Resume</b></u></a>
-                    </div>
-            </div>
-    </section> -->
-
-    <section class="s2">
-        <div class="main-container">
-            <div class="about-wrapper">
-                <div>
-
-                <h3>Education</h3>
-                <p>University of Tennessee at Chattanooga <br/><br/>
-                       Bachelor of Science<br/><br/>
-                       Major: CS - Software Systems<br/><br/>
-                       Minor: Business Administration
-               </p><br /><br />
-
-                <div id="skills">
-                    <h3 >Skills</h3>
-                    <ul style="padding: 0;">
-                        <li>Technical Consulting</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                        <li>React</li>
-                        <li>Angular</li>
-                        <li>Typescript</li>
-                        <li>AI & Machine Learning</li>
-                        <li>.NET & C#</li>
-                        <li>Node.js</li>
-                        <li>GitHub/git</li>
-                        <li>AWS(S3,SDK,IAM,EC2)</li>
-                        <li>SQL/PostgreSQL</li>
-                        <li>TestDrivenDev</li>
-                        <li>Source Control</li>
-                        <li>Physical Art</li>
-                        <li>Graphic Design</li>
-                        <li>Advanced Spanish</li>
-                        <li>Beginner Russian</li>
-                        <li>Carpentry</li>
-                    </ul>
-                </div>
-                
-            </div>
-           
-        </div>
-    </section>
-
-    <!-- Possibly add descriptions to each project which talk about what technologies were used and what lessons were learned -->
-    <!-- Add American Vikings link somewhere -->
-    
+    <!-- section for customer reviews and testimony -->
 
 
-    <section class="s1">
-        <header><h1 style="color: white; text-align: center;"><i><u>Portfolio</u></i></h1></header>
-
-        <div class="main-container">
-
-            <h3 id="freelance" style="text-align: center;">Freelance Platforms</h3>
-
-            <div class="post-wrapper">
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://www.fiverr.com/s/Q7wemd2"><img class="thumbnail" src="images/EyeTerraEdit.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">Sequoia Kanies on Fiverr</h6>
-                            <p class="post-intro">I have three tiers of website posted as gigs on Fiverr for anybody who wants a website made!</p>
-                            <a target="_blank" href="https://www.fiverr.com/s/Q7wemd2">See Gig Posting</a><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 id="professional" style="text-align: center;">Professional</h3>
-
-            <div class="post-wrapper">
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://podwheels.com/"><img class="thumbnail" src="images/PodWheels.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">PodWheels</h6>
-                            <p class="post-intro">Software Apprentice for FullStack Web/Mobile App</p>
-                            <a target="_blank" href="https://podwheels.com/">PodWheels</a><br>
-                            <!-- <a target="_blank" href="https://apps.apple.com/app/id1441313881">mobile app</a><br> -->
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://apps.apple.com/app/id6471553744"><img class="thumbnail" src="images/CyberMonk.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">CyberMonk App</h6>
-                            <p class="post-intro">Worked in R&D and Feature prototyping</p>
-                            <a target="_blank" href="https://apps.apple.com/app/id6471553744">Apple App Store</a><br>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div>
-                    <div class="post">
-                        <a target="_blank" href="https://simscww.com/" ><img src="images/SimsCWW.png" alt="simscww" class="thumbnail"></a> 
-                        <div class="post-preview">
-                            <h6 class="post-title">Sims Custom Woodwork</h6>
-                            <p class="post-intro">Google API Website Design</p>
-                            <a target="_blank" href="https://simscww.com/">Sims CWW</a><br>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="http://Hiddencharmsoaps.com" ><img src="images/HiddenCharmSoaps.png" alt="HiddenCharmSoaps" class="thumbnail"></a> 
-                        <div class="post-preview">
-                            <h6 class="post-title">Hidden Charm Soaps</h6>
-                            <p class="post-intro">Wix website created for the company owned by me and my wife, Viktoriya Kanies</p>
-                            <a target="_blank" href="http://Hiddencharmsoaps.com">HiddenCharmSoaps</a><br>
-                        </div>
-                    </div>
-                </div>
-<!-- 
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="/"><img class="thumbnail" src="images/LaAltena.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">La Alteña Restaurant</h6>
-                            <p class="post-intro">Local small business client to Sequoia Kanies LLC</p>
-                            <p class="post-intro" style="color: red; margin-bottom: 0px">Site temporarily unavailable due to client menu update</p>
-                            <a target="_blank" href="/">La Alteña</a><br>
-                        </div>
-                    </div>
-                </div> 
--->
-
-            </div>
-
-            <h3 id="opensource" style="text-align: center;">Open Source</h3>
-
-                <div class="post-wrapper">
-
-                    <div>
-                        <div class="post">
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/"><img class="thumbnail" src="images/sequoiatree.png"></a>
-                            <div class="post-preview">
-                                <h6 class="post-title">GitHub</h6>
-                                <p class="post-intro">My open source repository for all projects herein, including this site</p>
-                                <a target="_blank" href="https://github.com/ScrumMasterSequoia/">See Repository</a><br>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            <h3 id="ai" style="text-align: center;">Artificial Intelligence</h3>
-
-            <div class="post-wrapper">
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://color-guesser-neural-net.netlify.app/"><img class="thumbnail" src="images/ColorGuesser.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">ColorGuessAI</h6>
-                            <p class="post-intro">Neural network I designed and trained to choose text color based on randomly generated background color. Also generates network graph as shown above</p>
-                            <a target="_blank" href="https://color-guesser-neural-net.netlify.app/">See Project</a><br><br>
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/brain-js">See Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <!-- <a target="_blank" href=""> -->
-                        <img class="thumbnail" src="images/Codex.png">
-                        <!-- </a> -->
-                        <div class="post-preview">
-                            <!-- 
-                            https://codex-open-ai-teal.vercel.app/ 
-                            https://github.com/ScrumMasterSequoia/CodexOpenAI
-                             -->
-                            <h6 class="post-title">Codex OpenAI</h6>
-                            <p class="post-intro">Access OpenAI API and talk to an AI bot</p>
-                            <p class="post-intro" style="color: red">System currently down due to opensource payment exploitation. Needs user login and paywall</p>
-                            <!-- 
-                            <a target="_blank" href="">See Project</a><br><br> 
-                            <a target="_blank" href="">See Source Code</a> 
-                            -->
-                        </div>
-                    </div>
-                </div>
-            
-                <div>
-                    <div class="post">
-                        <!-- <a target="_blank" href=""> -->
-                        <img class="thumbnail" src="images/WitchesBrew.png">
-                        <!-- </a>  -->
-                        <div class="post-preview">
-                            <h6 class="post-title">WitchesBrew</h6>
-                            <p class="post-intro">Text prompt image generation app using OpenAI Dalle3</p>
-                            <p class="post-intro" style="color: red">System currently down due to opensource payment exploitation. Needs user login and paywall</p>
-                            <!-- 
-                            <a target="_blank" href="">See Project</a><br><br>
-                            <a target="_blank" href="">See Source Code</a> 
-                            -->
-                        </div>
-                    </div>
-                </div>
-    
-        </div>
-
-            <h3 id="featured" style="text-align: center;">Featured Projects</h3>
-
-                <div class="post-wrapper">
-
-                    <div>
-                        <div class="post">
-                            <a target="_blank" href="https://angularopenweather.netlify.app/"><img class="thumbnail" src="images/OpenWeather.png"></a>
-                            <div class="post-preview">
-                                <h6 class="post-title">Angular Open Weather</h6>
-                                <p class="post-intro">Look up weather around the world using Open Weather API with Angular!</p>
-                                <a target="_blank" href="https://angularopenweather.netlify.app/">See Project</a><br><br>
-                                <a target="_blank" href="https://github.com/ScrumMasterSequoia/WeatherAppLive">See Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="post">
-                            <a target="_blank" href="http://movie-search-bucket.s3-website-us-east-1.amazonaws.com/"><img class="thumbnail" src="images/MovieSearch.jpg"></a>
-                            <div class="post-preview">
-                                <h6 class="post-title">Movie Search</h6>
-                                <p class="post-intro">Search an OMDB database for movies and games</p>
-                                <a target="_blank" href="http://movie-search-bucket.s3-website-us-east-1.amazonaws.com/">See Project</a><br><br>
-                                <a target="_blank" href="https://github.com/ScrumMasterSequoia/MovieSearchReact">See Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="post">
-                            <a target="_blank" href="https://loanmentorllc.netlify.app/"><img class="thumbnail" src="images/LoanMentorLLC.png"></a>
-                            <div class="post-preview">
-                                <h6 class="post-title">Loan Mentor LLC</h6>
-                                <p class="post-intro">Helping myself and others create financial independence</p>
-                                <a target="_blank" href="https://loanmentorllc.netlify.app/">See Project</a><br><br>
-                                <a target="_blank" href="https://github.com/ScrumMasterSequoia/LoanMentorLLC">See Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="post">
-                            <a target="_blank" href="http://calculator-simple.s3-website-us-east-1.amazonaws.com"> <img class="thumbnail" src="images/Calculator.png"></a>
-                            <div class="post-preview">
-                                <h6 class="post-title">Calculator</h6>
-                                <p class="post-intro">Simple arithmetic calculator application</p>
-                                <a target="_blank" href="http://calculator-simple.s3-website-us-east-1.amazonaws.com">See Project</a><br><br>
-                                <a target="_blank" href="https://github.com/ScrumMasterSequoia/calculator">See Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="post">
-                            <a target="_blank" href="http://task-tracker-react.s3-website-us-east-1.amazonaws.com/"><img class="thumbnail" src="images/TaskTracker.jpg"></a>
-                            <div class="post-preview">
-                                <h6 class="post-title">Task Tracker</h6>
-                                <p class="post-intro">Create, Delete and Toggle Reminders on Tasks</p>
-                                <a target="_blank" href="http://task-tracker-react.s3-website-us-east-1.amazonaws.com/">See Project</a><br><br>
-                                <a target="_blank" href="https://github.com/ScrumMasterSequoia/TaskTracker">See Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> 
-
-            <h3 id="templates" style="text-align: center;">Project Templates</h3>
-
-            <div class="post-wrapper">
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="http://image-slider-react.s3-website-us-east-1.amazonaws.com/"><img class="thumbnail" src="images/ImageSlider.jpg"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">Image Slider</h6>
-                            <p class="post-intro">Button controlled slideshow of waterfall pictures</p>
-                            <a target="_blank" href="http://image-slider-react.s3-website-us-east-1.amazonaws.com/">See Project</a><br><br>
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/image_slider_react">See Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://github.com/ScrumMasterSequoia/portfolio-template/"><img class="thumbnail" src="images/PortfolioTemplate.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">Portfolio Website Template</h6>
-                            <p class="post-intro">Submitted and presented at CDTech Chattanooga</p>
-                            <a target="_blank" href="https://www.cdtechies.com/">CDTech Website</a><br>
-                            <a target="_blank" href="https://github.com/CD-Squared-Tech/portfolio-template">CDTech GitHub Fork</a><br>
-                            <a target="_blank" href="https://www.meetup.com/chadevs/events/299316458/?_gl=1*1y1yxbt*_up*MQ..*_ga*MzMwMTYyNzkuMTcwODYyNzIyNA..*_ga_NP82XMKW0P*MTcwODYyNzIyMy4xLjAuMTcwODYyNzIyMy4wLjAuMA..">CDTech Meetup</a><br>
-                            <a target="_blank" href="https://portfolio-template-cdtechies-sequoia.netlify.app/">See Project</a><br>
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/portfolio-template/">See Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://supplement-app-v1.netlify.app/"><img class="thumbnail" src="images/MaterialDesign.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">Google-MD</h6>
-                            <p class="post-intro">Professional prototype app for a client who cancelled the project (downloads as PWA)</p>
-                            <a target="_blank" href="https://supplement-app-v1.netlify.app/">See Project</a><br><br>
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/materialDesign">See Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://supplementappv1.netlify.app/"><img class="thumbnail" src="images/SupplementApp.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">SupplementAppV1</h6>
-                            <p class="post-intro">Professional prototype app for a client who cancelled the project (downloads as PWA)</p>
-                            <a target="_blank" href="https://supplementappv1.netlify.app/">See Project</a><br><br>
-                            <a target="_blank" href="https://github.com/ScrumMasterSequoia/SupplementAppV1">See Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        
-
-            <h3 id="personal" style="text-align: center;">Personal Projects</h3>
-
-            <div class="post-wrapper">
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://www.amazon.com/Carved-Edward-Kime-ebook/dp/B07WTKH3K1"><img class="thumbnail" src="images/TheCarved.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">The Carved</h6>
-                            <p class="post-intro">Self-published short story and poetry by myself and Edward Kime, available on Amazon</p>
-                            <a target="_blank" href="https://www.amazon.com/Carved-Edward-Kime-ebook/dp/B07WTKH3K1">Amazon Link</a><br><br>
-                            <a target="_blank" href="https://youtu.be/jTfSIQl07Lk?si=5ECutXdHtMSeYTNk">YouTube Audiobook</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <a target="_blank" href="https://www.instagram.com/american.vikings/"><img class="thumbnail" src="images/AmericanVikings.png"></a>
-                        <div class="post-preview">
-                            <h6 class="post-title">American Vikings - Veteran nonprofit</h6>
-                            <p class="post-intro">I made the company logo for this nonprofit store where proceeds go toward helping veterans with PTSD get service dogs</p>
-                            <a target="_blank" href="https://www.instagram.com/american.vikings/">See Company Instagram</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div> <!-- main container -->
-
-    </section>
-
-
-
-<!-- 
-    <section class="s2">
-        <div class="main-container">
-            <h3 style="text-align: center;">Contributions</h3>
-            
-                <p id="contributions">
-
-                    <u>Problem:</u> Need to cache resources for quick reload in browser <br>
-                    <u>Solution:</u> Create and implement manifest.json file, listing out all images/files desired in the cache<br>
-                    <u>Effect:</u> Reduce page load time by roughly 20%<br><br>
-
-                    <u>Problem:</u> Rotating advertisements were flashing on image switch on the Podwheels website. <br>
-                    <u>Solution:</u> Create and debug rotating advertisements pulled from database. <br>
-                    <u>Effect:</u> Increased user engagement visual asthetic<br><br>
-                    
-                    <u>Problem:</u> Header content displacement on mobile devices or page resize on browser within Suppliment App<br>
-                    <u>Solution:</u> Animated Header with open/close searchbar with DOM manipulation<br>
-                    <u>Effect:</u> Fixed jarring user experience within edge case<br><br>
-                    
-                    <u>Problem:</u> Prototype SearchBar was not secure, allowing for SQL injection for Suppliment App<br>
-                    <u>Solution:</u> Implement security for SearchBar by using backtick string interpolation with parameterized queries<br>
-                    <u>Effect:</u> Increased security and user trust to prevent data breaches<br><br>
-                    
-                    <u>Problem:</u> Suppliment App client needed a way to download their website to their phone or desktop<br>
-                    <u>Solution:</u> Added meta tags to enable PWA funtionality (Progressive Web App) and set CSS-safe-areas<br>
-                    <u>Effect:</u> Increased user engagement and retention by providing a more native app-like experience<br><br>
-                    
-                    <u>Problem:</u> PWA will not update on mobile devices on publish<br>
-                    <u>Solution:</u> Used Github Version Control and Netlify to host the PWA, allowing for continuous deployment<br>
-                    <u>Effect:</u> User's devices automatically update on load of updated software<br><br>
-                    
-                    <u>Problem:</u> User needed a way to change text color based on background color behind it so it would look good<br>
-                    <u>Solution:</u> ColorGuessAI - Trains a custom neural net using brain.js to select text color based on background color<br>
-                    <u>Effect:</u> Provides a simple and effective way to solve the problem and can be updated with new training data to improve accuracy<br><br>
-                    
-                    <u>Problem:</u> Development team for CyberMonk needed a way to determine which software to use when converting from browser/PWA to IOS/Android native apps<br>
-                    <u>Solution:</u> Used Cordova, Capacitor, Google Material Design to build different user experiences, testing on multiple devices and determined that Capacitor was the best solution<br>
-                    <u>Effect:</u> Saved the team time and money by providing a clear path to the best solution, and now CyberMonk is live on the app store!<br><br>
-                    
-                    <u>Problem:</u> Personal business website needed a way to provide valueable guidance to users seeking to take out loans<br>
-                    <u>Solution:</u> LoanMentorLLC - Created a company homepage with dropdown menu navigation, light/dark modes, and questionnaire (filtering affiliate company links based on QA responses)<br>
-                    <u>Effect:</u> Provided a business solution to a practical problem, however this project is still in development and the LLC is not yet registered.<br><br>
-                    
-                    <u>Problem:</u> Supplement App client needed contact form using Google Material Design prototype for user input<br>
-                    <u>Solution:</u> Prototyped user forms with texboxes, switch field, checkboxes, submit button, However CSS custom elements will be used in the final version based on developer feedback<br>
-                    <u>Effect:</u> Provided a simple and effective way for users to submit their information, and chose the best design solution available<br><br>
-                    
-                    <u>Problem:</u> Create tester data for searchbar for the Suppliment App to enable client to generate real world data<br>
-                    <u>Solution:</u> Used JS to seed and migrate PostgreSQL database with sample data, destroying and reinstantiating the database at the click of a button<br>
-                    <u>Effect:</u> Provided a solution to populate a database with sample data for testing and development<br><br>
-                    
-                    <u>Problem:</u> Podwheels and Podtopics UI bug; audio player overlapping the top menu<br>
-                    <u>Solution:</u> Debugged HTML and CSS to fix the overlapping audio player via z-index and position<br>
-                    <u>Effect:</u> Fixed user experience bug<br><br>
-                    
-                   
-                   
-                    Problem: User needed a custom API wrapper for OpenAI API with a simple frontend layout
-                    Solution: OpenAI API Codex - Uses OpenAI API key with custom frontend wrapper. Implements client/server, hosted with Vercel, express, API-endpoints
-                    Effect: Practiced API integration and deployment, increased user engagement with a simple AI chatbot
-                    
-                    Problem: User needed a simple movie search app to find movies and games using just a name
-                    Solution: Movie Search - Search OMDB database for movies and games, create custom card with movie details and image
-                    Effect: Provided a simple full stack app for users to find movies and games without needing to navigate to deal with ads 
-                    
-                    
-                    </p>
-
-    <li>- User Login and account management with security </li><br> 
-    <li>- Dropdown Menu - website routing/link navigation</li><br>
-    <li>- Create and Test API endpoints</li><br>
-    <li>- Manage AWS S3 bucket resources programatically and within management console</li><br>
-    <li>- Create and manage IAM roles and policies</li><br>
-    <li>- Programatically upload images/objects to s3 buckets</li><br>
-    <li>- Create and manage EC2 instances</li>
-
-
-    </section> 
--->
-
+    <!-- ***** ASK PEOPLE FOR REAL TESTIMONY!!! ***** 
+     Ask them to phrase the testimony in a way that exemplifies the positive effect the work had on the person or business. How did I help and are you genuinely grateful. If not, don't write me a recommendation-->
     <!-- <section class="s2">
-        <div class="main-container" style="display: grid; justify-content: center;">
-            <h3 style="text-align: center;">Website QR Code:<img id="PortfolioWebsiteQRCode" alt="PortfolioWebsiteQRCode" src="images/QRCode.png"></h3>
-            
+        <div class="main-container" style="background-color: rgba(0, 0, 0, 0.8);">
+            <div>
+                <h2><i>Testimony:</i></h2><br><br>
+                <p style="color: white;"><i>"Our company, "PodTopics" was able to gain many more podcast clients due to the outreach generated by the website!" <br>
+                - Gregg Thompson: Founder/CEO of PodTopics and Podwheels, Chattanooga, TN. <br>
+                <a style="color: rgb(2, 199, 206);" href="https://www.podtopics.com/">PodTopics</a>
+                </i></p><br>
+
+                <p style="color: white;"><i>"" <br>
+                - River Kanies: Lead Programmer for PodTopics and CyberMonk <br>
+                <a style="color: rgb(2, 199, 206);" href="https://apps.apple.com/app/id6471553744">CyberMonk</a>
+                </i></p><br>
+
+                <p style="color: white;"><i>"" <br>
+                - SimsCustomWoodwork <br>
+                <a style="color: rgb(2, 199, 206);" href="https://apps.apple.com/app/id6471553744">CyberMonk</a>
+                </i></p><br>
+
+                <p style="color: white;"><i>"The software solution allowed our company of two employees to work seemlessly because the Point of Sale, and eCommerce could be automated and remote!" <br>
+                - Viktoriya Kanies: Founder/CEO of HiddenCharmSoaps<br>
+                <a style="color: rgb(2, 199, 206);" href="http://hiddencharmsoaps.com/">HiddenCharmSoaps</a>
+                </i></p>
+                <br><br>
+            </div>
         </div>
     </section> -->
 
+    <!-- section for image carousel with template layouts: Ecommerce, basic info, SPA, about, contact -->
+    <!-- <section class="s2">
+        <div class="main-container" style="background-color: rgba(0, 0, 0, 0.8);">
+            <div>
+                <h2><i></i></h2>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- section for image carousel with graphic design images and art -->
     <!-- <section class="s2">
         <div class="main-container">
-            <h3 id="contact" style="text-align: center;">Get In Touch</h3>
-            
-            <form style="text-align: center;" id="about-wrapper">
-                
-                <a class="contact-button" href="mailto:kaniessequoia@gmail.com"> Contact </a>
-            </form>
+            <div>
+                <h2><i></i></h2>
+            </div>
         </div>
     </section> -->
 
-    <footer class="s1" style="background-color: black; margin-bottom: -2.5em; line-height: 1em;">
+ <!-- Meet the team! (its just roma sleeping on me while I'm trying to program) jk, Vika is a crucial part of my success and she needs some love too! -->
+ <!-- <section class="s2">
+    <div class="main-container">
+        <div>
+            <h2><i></i></h2>
+        </div>
+    </div>
+</section> -->
 
-        <div  style="text-align: center;">
-            <!-- update class and color being redundant (move to css)-->
-            <h3 class="contact">Get In Touch</h3>
-            <a style="color: rgb(2, 199, 206);" target="blank" href="https://maps.app.goo.gl/qr1gXXzWVCUjLDSU9?g_st=ic">See <u>Ringgold, GA</u> on Google Maps</a>
-            <p style="color: rgb(2, 199, 206);">Phone: <a href="tel:6153429530">(615)342-9530</a></p>
-            <p style="color: rgb(2, 199, 206);">Email: sequoiakaniesllc@gmail.com</p>
-            <form style="text-align: center;" id="about-wrapper">
-                <a class="contact-button" href="mailto:sequoiakaniesllc@gmail.com"> Email Me </a>
-            </form>
+ <!-- section for a feature list. I can provide  
+    dropdown menu navigation, 
+    contact forms, buttons, 
+    text and images, 
+    login and payment, 
+    Search Engine Optimization,  
+    Database and Security
+    Brand name and logo. ...
+    Personalized domain name. ...
+    Contact and social media information. ...
+    Calls to action. ...
+    Blog. ...
+    About us page. ...
+    Search functionality. ...
+    FAQs.
+ -->
+    <!-- <section class="s2">
+        <div class="main-container">
+            <div>
+                <h2><i></i></h2>
+            </div>
         </div>
+    </section> -->
+
+<!-- section for the process with pictures and simple step descriptions. copy simscww.com 
+ ***** Needs to be redesigned so the image is on the left and then the description is on the right of it. Or some other, better orientation.
+****** Need to limit the width of the text so its a block instead of a wide single line. Format
+****** Want pictures to be bigger. Maybe 200 tall and 300 wide? or 300x300
+****** Take better pictures for all sections
+****Need SEO for my own site. Create features to show off what kind of features I can work with. 
+*** call my websites, Software Solutions. The client is in pain and I have a software solution to help them. 
+*** Ask the client what their problems are and provide genuine benefit and value to them by asking them 'what would you want for christmas' or by getting to know them well enough that you don't have to ask
+
+
+ -->
+    <section class="s2" style="margin-bottom: 1em;">
+        <div class="main-container" style="background-color: rgba(0, 0, 0, 0.8); padding: 1em;">
+            <h2 style="text-align: left; border-bottom: 2px solid white;"><i>The Process:</i></h2>
+
+            <!-- Consultation -->
+            <div class="process-card">
+                <!-- picture of me meeting with someone -->
+                <!-- add phone number or email here? -->
+                <img src="images/consult.png" alt="teamwork"><br>
+                <h3><u>Step 1 - Consultation:</u></h3>
+                <p style="color: white; border-bottom: 2px solid white; padding-bottom: 0.5em;">Initial meeting where we discuss the origin story and future vision of your small business! What problem can we solve together? Project begins!</p>
+            </div><br><br>
+
+            <!-- Gathering Requirements -->
+            <!-- Select a template from a carousel or use one as a springboard or talking point -->
+            <div class="process-card">
+                <!-- picture of sending documents or something. maybe pictures in a folder -->
+                <img src="images/blueprint.png" alt="requirements">
+                <h3><u>Step 2 - Gathering Requirements:</u></h3>
+                <p style="color: white; border-bottom: 2px solid white; padding-bottom: 0.5em;">Clearly lay out the landing page, images, art style, testimony, about info, feature list, estimate, contract and other general information along with a blueprint for the project as a whole!</p>
+            </div><br><br>
+
+            <!-- Graphic Design -->
+            <!-- add link to Graphic Design portfolio -->
+            <div class="process-card">
+                <img src="images/eye.png" alt="graphic design">
+                <h3><u>Step 3 - Graphic Design:</u></h3>
+                <p style="color: white; border-bottom: 2px solid white; padding-bottom: 0.5em;">Any physical or digital art commissioned for the project is created by hand or digitally and added to the project files to make the website beautiful and unique!</p>
+            </div><br><br>
+
+            <!-- Development -->
+            <!-- add link to Development portfolio -->
+            <div class="process-card">
+                <img src="images/coding.png" alt="coding">
+                <h3><u>Step 4 - Development:</u></h3>
+                <p style="color: white; border-bottom: 2px solid white; padding-bottom: 0.5em;">Software solution development begins, several rounds of agile meetings are performed in sync with development. Changes and features are finalized and approved by the business owners!</p>
+            </div><br><br>
+
+            <!--  -->
+            <div class="process-card">
+                <img src="images/cybermonk.png" alt="software deployment">
+                <h3><u>Step 5 - Software Solution Deployment:</u></h3>
+                <p style="color: white; border-bottom: 2px solid white; padding-bottom: 0.5em;">The software solution is deployed live on the internet! Follow up meeting to evaluate customer satisfaction, quality of work, and future aspirations!</p>
+            </div><br><br>
+
+            <!-- Maintenance, updates, continued partnership -->
+            <!-- explain CMS? -->
+            <div class="process-card">
+                <img src="images/cms.png" alt="cms">
+                <h3><u>Step 6 - Content Management and Updates:</u></h3>
+                <p style="color: white; border-bottom: 2px solid white; padding-bottom: 0.5em;">As business partners we continue to progress, managing content changes, additions, and setting up a CMS (Content Management System) so the client can be involved in the creativite process! </p>
+            </div><br><br>
+
+            <!-- Results! -->
+            <!-- Can I provide proof of the positive results of my work? Dev portfolio kind of does this but not directly. It needs to be literal. Before I worked, the company made $x a month and after I built them a site they made $y a month...etc -->
+            <div class="process-card">
+                <img src="images/sales.png" alt="sales">
+                <h3><u>Step 7 - Results:</u></h3>
+                <p style="color: white; border-bottom: 2px solid white; padding-bottom: 0.5em;">The problem we identified in the beginning of the project is solved! We can celebrate our vision becoming tangible and meeting our goals together!</p>
+            </div>
+            <br><br>
+
+            <!-- CAPSTONE 
+             Clarity
+             Authority
+             Problem
+             Solution
+             The Why
+             Opportunity
+             Next Steps
+             Essence
+            -->
+        </div>
+    </section>
+
     
-        <div class="social-links" style="line-height: 1.3em;">
-            <br/>
-            <h3>Links</h3>
-    <!-- ****** There should be social media icons
-             and these should be business links! for SKLLC! -->
-            <a target="_blank" href="resume.pdf">Software Engineering Resume</a>
-            <a target="_blank" href="https://github.com/ScrumMasterSequoia/">GitHub</a>
-            <a target="_blank" href="https://www.linkedin.com/in/sequoia-kanies-a402a228a/">LinkedIn</a>
-            <a target="_blank" href="https://github.com/ScrumMasterSequoia/PredictiveStockAnalyzer">UTC Senior Capstone</a>
-            <a target="_blank" href="https://www.cdtechies.com/">CD Techies</a>
-            <a target="_blank" href="https://www.youtube.com/@sequoiakanies2202/featured">YouTube</a>
-            <a target="_blank" href="https://www.instagram.com/sequoiakanies/">Personal Instagram</a>
-            <a target="_blank" href="https://www.instagram.com/sequoiatreesart/">Art Instagram</a>
-            <a target="_blank" href="https://www.tiktok.com/@sequoiatreesart">Art Tiktok</a>
-            <a target="_blank" href="https://www.facebook.com/BizzareArtBazzar/">Art Facebook</a>
-            <a target="_blank" href="https://opensea.io/SequoiaTrees">OpenSea</a>
-        </div>
+
+<footer class="s1" style="background-color: black; line-height: 1em;">
+
+    <div>
+        <!-- update class and color being redundant (move to css)-->
+        <h3 class="contact" style="text-align: center;">Get In Touch</h3>
+        <a style="color: rgb(2, 199, 206);" target="blank" href="https://maps.app.goo.gl/qr1gXXzWVCUjLDSU9?g_st=ic">See <u>Ringgold, GA</u> on Google Maps</a>
+        <p style="color: rgb(2, 199, 206);">Phone: <a href="tel:6153429530">(615)342-9530</a></p>
+        <p style="color: rgb(2, 199, 206);">Email: sequoiakaniesllc@gmail.com</p>
+        <form style="text-align: center;" id="about-wrapper">
+            <a class="contact-button" href="mailto:sequoiakaniesllc@gmail.com"> Email Me </a>
+        </form>
+    </div>
+
+    <div class="social-links" style="line-height: 1.3em;">
+        <br/>
+        <h3>Links</h3>
+<!-- ****** There should be social media icons
+         and these should be business links! for SKLLC! -->
+        <a target="_blank" href="resume.pdf">Software Engineering Resume</a>
+        <a target="_blank" href="https://github.com/ScrumMasterSequoia/">GitHub</a>
+        <a target="_blank" href="https://www.linkedin.com/in/sequoia-kanies-a402a228a/">LinkedIn</a>
+        <a target="_blank" href="https://github.com/ScrumMasterSequoia/PredictiveStockAnalyzer">UTC Senior Capstone</a>
+        <a target="_blank" href="https://www.cdtechies.com/">CD Techies</a>
+        <a target="_blank" href="https://www.youtube.com/@sequoiakanies2202/featured">YouTube</a>
+        <a target="_blank" href="https://www.instagram.com/sequoiakanies/">Personal Instagram</a>
+        <a target="_blank" href="https://www.instagram.com/sequoiatreesart/">Art Instagram</a>
+        <a target="_blank" href="https://www.tiktok.com/@sequoiatreesart">Art Tiktok</a>
+        <a target="_blank" href="https://www.facebook.com/BizzareArtBazzar/">Art Facebook</a>
+        <a target="_blank" href="https://opensea.io/SequoiaTrees">OpenSea</a>
+    </div>
+    
+<!-- add a contact form in the footer and possibly social links with icons, would need business social accounts! -->
+    <!-- <div class="contact-footer">
+        <p>Phone: <a style="color: rgb(2, 199, 206); font-size: large;" href="tel:6153429530">(615)342-9530</a></p>
+
+    </div> -->
+
+       
+
+    <!-- add contact info in the footer -->
+    <div class="contact-info-footer">
         
-    <!-- add a contact form in the footer and possibly social links with icons, would need business social accounts! -->
-        <!-- <div class="contact-footer">
-            <p>Phone: <a style="color: rgb(2, 199, 206); font-size: large;" href="tel:6153429530">(615)342-9530</a></p>
-    
-        </div> -->
-    
-<!-- ******** 
- organize stacking footer on narrow window, autofit? side by side when wide enough
--->
-    
-        <!-- add contact info in the footer -->
-        <div class="contact-info-footer">
-            
-        </div>
-    
-    </footer>
-    <script type="text/javascript" src="script.js"></script>
+    </div>
+
+</footer>
+
+
+    <script type="text/javascript" src="skllc.js"></script>
 
 </body>
 </html>
+
+<!-- 
+
+✔   1) A phone number.
+    2) An email address.
+    3) Your hours of business.
+    4) Your location.
+    5) A map – i.e., the image of a map showing customers how to find you.
+    7) A photograph of what your storefront or the front of your business looks like.
+    8) A link to your Facebook page.
+    9) A contact form.
+    10) An “About us” page.
+    11) A photograph of the business owner.
+    12) A brief history of how long you’ve been in business, who and where you serve.
+    13) At least three photographs of your work.
+    14) A page dedicated to the products or services you offer.
+    15) Logos, icons or links to professional organizations you belong to.
+    16) A logo.
+    17) Customer testimonials.
+    18) A call to action to come to your store/business or to call you.
+    19) Some kind of coupon, discount, or incentive.
+    20) An email sign-up form.
+    21) Unique title tags on every page of your site.
+    22) Meta description tags written to incite action in the search engine results.
+    23) A web address that’s easy to remember and spell.
+    24) Pages that load in 2 seconds or less.
+    25) A design that looks good on mobile devices. 
+
+-->

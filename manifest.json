@@ -7,13 +7,13 @@
     "id": "/",
     "icons": [
         {
-            "src": "./images/sequoiatree.png",
+            "src": "./portolio/images/sequoiatree.png",
             "sizes": "408x408",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "./images/sequoiatree.png",
+            "src": "./portolio/images/sequoiatree.png",
             "sizes": "408x408",
             "type": "image/png",
             "purpose": "any"
@@ -25,13 +25,13 @@
     "prefer_related_applications": false,
     "screenshots": [
         {
-            "src": "./images/EyeTerraEdit.png",
+            "src": "./portolio/images/EyeTerraEdit.png",
             "sizes": "600x409",
             "type": "image/png",
             "label": "Sequoia"
         },
         {
-            "src": "./images/EyeTerraEdit.png",
+            "src": "./portolio/images/EyeTerraEdit.png",
             "sizes": "600x409",
             "type": "image/png",
             "form_factor": "wide",
