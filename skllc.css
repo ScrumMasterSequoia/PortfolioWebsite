@@ -261,6 +261,51 @@ a{
 .services-card{
   padding: 0.5em;
 }
+.features-wrapper {
+  background-color: var(--color-background);
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.112) transparent;
+  -ms-overflow-style: none;
+}
+.features-wrapper::-webkit-scrollbar {
+  display: none;
+  
+}
+
+/* .features-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 148, 148, 0.4);
+  border-radius: 10px;
+} */
+
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  height: 50px;
+  width: 150px;
+  flex-shrink: 0;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  border: 1px solid var(--borderColor);
+  margin: 5px;
+  gap: var(--gap);
+  --webkit-box-shadow: var(--background-color);
+  -moz-box-shadow: var(--background-color);
+  box-shadow: var(--background-color);
+}
+/* .features img{
+  border-radius: 5px;
+  height:150px;
+  width:150px;
+} */
+
 @media screen and (max-width: 540px) {
   body {
     position: relative;
