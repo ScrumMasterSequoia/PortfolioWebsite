@@ -44,7 +44,7 @@ for(var i=0; themeDots.length > i; i++) {
 
 function setTheme(mode){
     if(mode == 'light'){
-        document.getElementById('theme-style').href = 'default.css'
+        document.getElementById('theme-style').href = 'portfolio.css'
     }
     if(mode == 'red'){
         document.getElementById('theme-style').href = 'red.css'
@@ -63,7 +63,7 @@ function setTheme(mode){
 
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service-worker.js").then(registration => {
-        console.log("script.js - Service Worker Registered!");
+        console.log("portfolio.js - Service Worker Registered!");
         console.log(registration);
     }).catch(error => {
         console.log("Service Worker Registration Failed!" + error);
