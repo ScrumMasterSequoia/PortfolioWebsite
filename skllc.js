@@ -1,4 +1,3 @@
-
 const menuButton = document.getElementById("menu-button");
 const menuDropdown = document.getElementById("menu-dropdown");
 let isMenuClosed = true;
