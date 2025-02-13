@@ -242,7 +242,9 @@ a{
 }
 .contact-button{
   display: block;
-  max-width: 200px;
+  width: 50%;
+  font-size: larger;
+  max-width: 400px;
   margin: 0 auto;
   margin-bottom: 10px;
   border: 1px solid var(--borderColor);
