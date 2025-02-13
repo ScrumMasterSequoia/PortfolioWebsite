@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, strong{
     margin-top: 0;
 }
 p, li, span, label, input, textArea{
-    color: var(--secondaryText);
+    /* color: var(--secondaryText); */
     font-family: 'Roboto Mono', monospace;;
 }
 a{
@@ -266,20 +266,77 @@ align-content: center;
       z-index: -1; /* Ensure it is behind other content */
     }
   }
-/* @media screen and (max-width: 540px) {
-    body {
-        background: url(../images/TheCarvedNarrow.png) no-repeat center center;
-        background-size: contain; 
-      background-attachment: fixed;
-      background-color: #000000;
-    }
-  } */
-  
-  /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    body {
-        background: url(../images/TheCarvedNarrow.png) no-repeat center center;
-        background-size: contain; 
-      background-attachment: fixed;
-      background-color: #000000;
-    }
-  } */
+
+
+  /* Contact Form from original form.css*/
+.contact-form {
+  max-width: 500px;
+  /* margin: 2rem auto; */
+  padding: 1em;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff91;
+  font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+  width: 80%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db85;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.1);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.error-message,
+.error-name,
+.error-email {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submit-button {
+  background-color: #808080;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 80%;
+}
+
+.submit-button:hover {
+  background-color: #aeaeae;
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.3);
+}
