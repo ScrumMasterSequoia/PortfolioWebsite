@@ -46,4 +46,4 @@ function sendMail() {
       event.preventDefault();
       sendMail();
     });
-  });
+  }); 
