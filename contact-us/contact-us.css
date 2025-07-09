@@ -340,3 +340,13 @@ align-content: center;
   outline: none;
   box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.3);
 }
+
+/* Landscape orientation fix - mobile only */
+@media screen and (orientation: landscape) and (max-width: 768px) and (hover: none) and (pointer: coarse) {
+  body {
+    background: url(../images/carvedbackdrop.png) no-repeat center center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: #000000;
+  }
+}

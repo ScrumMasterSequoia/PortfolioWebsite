@@ -308,7 +308,7 @@ a{
   width:150px;
 } */
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 540px) {
   body {
     position: relative;
     background-color: #00000000;
@@ -324,6 +324,16 @@ a{
     background: url(images/TheCarvedNarrow.png) no-repeat top center;
     background-size: contain;
     z-index: -1; /* Ensure it is behind other content */
+  }
+}
+
+/* Landscape orientation fix - mobile only */
+@media screen and (orientation: landscape) and (max-width: 768px) and (hover: none) and (pointer: coarse) {
+  body {
+    background: url(images/carvedbackdrop.png) no-repeat center center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: #000;
   }
 }
 
