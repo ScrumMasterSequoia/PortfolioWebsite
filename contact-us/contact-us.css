@@ -344,8 +344,7 @@ align-content: center;
 /* Landscape orientation fix - mobile only */
 @media screen and (orientation: landscape) and (max-width: 768px) and (hover: none) and (pointer: coarse) {
   body {
-    background: url(../images/carvedbackdrop.png) no-repeat center center;
-    background-size: contain;
+    background: none;
     background-color: #000000;
     /* Remove background-attachment: fixed for mobile compatibility */
   }
