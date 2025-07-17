@@ -331,7 +331,7 @@ a{
 @media screen and (orientation: landscape) and (max-width: 768px) and (hover: none) and (pointer: coarse) {
   body {
     background: url(images/carvedbackdrop.png) no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     background-color: #000;
   }
