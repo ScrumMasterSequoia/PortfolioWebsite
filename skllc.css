@@ -344,16 +344,15 @@ a{
     display: none !important;
   }
   
-  /* Use a pseudo-element for fixed background on mobile */
-  body::after {
-    content: "";
+  /* Use the background wrapper instead of body pseudo-element */
+  #background-wrapper {
+    background: url(images/carvedbackdrop.png) no-repeat center center;
+    background-size: contain;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(images/carvedbackdrop.png) no-repeat center center;
-    background-size: contain;
     z-index: -1;
     pointer-events: none;
   }
@@ -376,6 +375,19 @@ a{
   /* Make main container take full height */
   .main-container {
     height: 100%;
+  }
+  
+  /* Use the background wrapper for portrait mode */
+  #background-wrapper {
+    background: url(images/TheCarvedNarrow.png) no-repeat top center;
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
   }
 }
 
