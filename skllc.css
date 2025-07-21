@@ -336,7 +336,7 @@ a{
   }
   
   /* Use a pseudo-element for fixed background on mobile */
-  body::after {
+  /* body::after {
     content: "";
     position: fixed;
     top: 0;
@@ -347,7 +347,7 @@ a{
     background-size: contain;
     z-index: -1;
     pointer-events: none;
-  }
+  } */
 }
 
 
