@@ -378,19 +378,6 @@ align-content: center;
   .main-container {
     height: 100%;
   }
-  
-  /* Add black overlay div behind footer */
-  footer::before {
-    content: "";
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    z-index: -0.5;
-    pointer-events: none;
-  }
 }
 
 /* Portrait mode for iOS */
@@ -398,18 +385,5 @@ align-content: center;
   /* Make main container take full height */
   .main-container {
     height: 100%;
-  }
-  
-  /* Add black overlay div behind footer */
-  footer::before {
-    content: "";
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    z-index: -0.5;
-    pointer-events: none;
   }
 }
