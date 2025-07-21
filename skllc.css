@@ -371,12 +371,6 @@ a{
     max-height: 100vh !important;
     max-height: -webkit-fill-available !important;
   }
-  
-  /* Allow scrolling within the content area but not beyond footer */
-  .main-container {
-    max-height: calc(100vh - 200px); /* Adjust based on header/footer height */
-    overflow-y: auto;
-  }
 }
 
 /* Portrait mode scroll prevention for iOS */
@@ -385,12 +379,6 @@ a{
     overflow-y: hidden !important;
     max-height: 100vh !important;
     max-height: -webkit-fill-available !important;
-  }
-  
-  /* Allow scrolling within the content area but not beyond footer */
-  .main-container {
-    max-height: calc(100vh - 200px); /* Adjust based on header/footer height */
-    overflow-y: auto;
   }
 }
 
