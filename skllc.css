@@ -365,21 +365,17 @@ a{
     overflow-x: hidden;
   }
   
-  /* Make main container expand to fill available space */
+  /* Make main container take full height */
   .main-container {
-    min-height: calc(100vh - 200px); /* Fill available space minus header/footer */
-    display: flex;
-    flex-direction: column;
+    height: 100%;
   }
 }
 
 /* Portrait mode for iOS */
 @media screen and (max-width: 540px) {
-  /* Make main container expand to fill available space */
+  /* Make main container take full height */
   .main-container {
-    min-height: calc(100vh - 150px); /* Fill available space minus header/footer */
-    display: flex;
-    flex-direction: column;
+    height: 100%;
   }
 }
 
