@@ -365,6 +365,8 @@ align-content: center;
     background-size: contain;
     z-index: -1;
     pointer-events: none;
+    /* Clip the background to prevent overflow */
+    clip-path: inset(0 0 0 0);
   }
   
   /* Ensure content doesn't extend beyond viewport */
@@ -378,6 +380,13 @@ align-content: center;
   .main-container {
     height: 100%;
   }
+  
+  /* Ensure footer covers background */
+  footer {
+    position: relative;
+    z-index: 1;
+    background-color: black !important;
+  }
 }
 
 /* Portrait mode for iOS */
@@ -385,5 +394,12 @@ align-content: center;
   /* Make main container take full height */
   .main-container {
     height: 100%;
+  }
+  
+  /* Ensure footer covers background in portrait */
+  footer {
+    position: relative;
+    z-index: 1;
+    background-color: black !important;
   }
 }
