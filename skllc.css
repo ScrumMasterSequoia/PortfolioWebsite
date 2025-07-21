@@ -330,9 +330,14 @@ a{
 /* Landscape orientation fix - mobile only */
 @media screen and (orientation: landscape) and (max-width: 768px) and (hover: none) and (pointer: coarse) {
   body {
-    background: none;
-    background-color: #000;
+    background: none !important;
+    background-color: #000 !important;
     /* Remove background-attachment: fixed for mobile compatibility */
+  }
+  
+  /* Override the portrait mode pseudo-element */
+  body::before {
+    display: none !important;
   }
   
   /* Use a pseudo-element for fixed background on mobile */
