@@ -350,14 +350,13 @@ align-content: center;
     min-height: -webkit-fill-available;
     overflow-x: hidden;
     margin-bottom: 2rem; /* Add bottom margin to prevent content from extending */
-    position: relative; /* Add this for absolute positioning context */
     /* Remove background-attachment: fixed for mobile compatibility */
   }
   
-  /* Use a pseudo-element for background that only covers content area */
+  /* Use a pseudo-element for fixed background on mobile */
   body::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -373,6 +372,5 @@ align-content: center;
     height: 100vh;
     height: -webkit-fill-available;
     overflow-x: hidden;
-    overflow-y: hidden;
   }
 }
