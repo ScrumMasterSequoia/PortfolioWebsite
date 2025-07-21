@@ -374,19 +374,20 @@ align-content: center;
     overflow-x: hidden;
   }
   
-  /* Prevent scrolling beyond footer on iOS */
-  body {
-    overflow-y: hidden !important;
-    max-height: 100vh !important;
-    max-height: -webkit-fill-available !important;
+  /* Make main container expand to fill available space */
+  .main-container {
+    min-height: calc(100vh - 200px); /* Fill available space minus header/footer */
+    display: flex;
+    flex-direction: column;
   }
 }
 
-/* Portrait mode scroll prevention for iOS */
+/* Portrait mode for iOS */
 @media screen and (max-width: 540px) {
-  body {
-    overflow-y: hidden !important;
-    max-height: 100vh !important;
-    max-height: -webkit-fill-available !important;
+  /* Make main container expand to fill available space */
+  .main-container {
+    min-height: calc(100vh - 150px); /* Fill available space minus header/footer */
+    display: flex;
+    flex-direction: column;
   }
 }
