@@ -346,6 +346,10 @@ align-content: center;
   body {
     background: none;
     background-color: #000000;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
+    margin-bottom: 2rem; /* Add bottom margin to prevent content from extending */
     /* Remove background-attachment: fixed for mobile compatibility */
   }
   
@@ -357,9 +361,17 @@ align-content: center;
     left: 0;
     width: 100%;
     height: 100vh;
+    height: -webkit-fill-available; /* iOS Safari fix */
     background: url(../images/carvedbackdrop.png) no-repeat center center;
     background-size: contain;
     z-index: -1;
     pointer-events: none;
+  }
+  
+  /* Ensure content doesn't extend beyond viewport */
+  html {
+    height: 100vh;
+    height: -webkit-fill-available;
+    overflow-x: hidden;
   }
 }
