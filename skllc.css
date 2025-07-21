@@ -331,7 +331,7 @@ a{
 @media screen and (orientation: landscape) and (max-width: 768px) and (hover: none) and (pointer: coarse) {
   body {
     background: none !important;
-    background-color: #000 !important;
+    background-color: transparent !important;
     /* Remove background-attachment: fixed for mobile compatibility */
   }
   

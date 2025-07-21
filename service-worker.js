@@ -1,4 +1,4 @@
-const versionNumber = 4.8;
+const versionNumber = 4.7;
 
 self.addEventListener('install', e => {
     try {
