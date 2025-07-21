@@ -350,13 +350,14 @@ align-content: center;
     min-height: -webkit-fill-available;
     overflow-x: hidden;
     margin-bottom: 2rem; /* Add bottom margin to prevent content from extending */
+    position: relative; /* Add this for absolute positioning context */
     /* Remove background-attachment: fixed for mobile compatibility */
   }
   
-  /* Use a pseudo-element for fixed background on mobile */
+  /* Use a pseudo-element for background that only covers content area */
   body::after {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
