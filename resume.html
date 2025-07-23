@@ -89,8 +89,8 @@
                     </button>
                 </a>
                 
-                <!-- View Resume Button -->
-                <button class="contact-button" style="width: 100%; max-width: 300px; margin: 0; cursor: pointer;" onclick="openResumeModal()">
+                <!-- View Resume Button (Desktop Only) -->
+                <button class="contact-button" style="width: 100%; max-width: 300px; margin: 0; cursor: pointer;" onclick="openResumeModal()" id="previewButton">
                     Preview Resume
                 </button>
             </div>
@@ -164,6 +164,15 @@
         </div>
     </div>
 
+    <!-- Resume Images (Mobile Only) -->
+    <div id="resumeImages" style="display: none; text-align: center; margin: 2em auto; max-width: 800px;">
+        <h2 style="margin-bottom: 1em;">Resume</h2>
+        <div style="background: white; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <img src="images/resumePic1.png" alt="Resume Page 1" style="width: 100%; max-width: 600px; height: auto; margin-bottom: 20px;">
+            <img src="images/ResumePic2.png" alt="Resume Page 2" style="width: 100%; max-width: 600px; height: auto;">
+        </div>
+    </div>
+
     <script>
         function openResumeModal() {
             document.getElementById('resumeModal').style.display = 'block';
@@ -192,6 +201,8 @@
             const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             const downloadButton = document.getElementById('downloadButton');
             const modalDownloadButton = document.getElementById('modalDownloadButton');
+            const previewButton = document.getElementById('previewButton');
+            const resumeImages = document.getElementById('resumeImages');
             
             if (isMobile) {
                 if (downloadButton) {
@@ -199,6 +210,12 @@
                 }
                 if (modalDownloadButton) {
                     modalDownloadButton.style.display = 'none';
+                }
+                if (previewButton) {
+                    previewButton.style.display = 'none';
+                }
+                if (resumeImages) {
+                    resumeImages.style.display = 'block';
                 }
             }
         }
