@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Sequoia Kanies LLC</title>
+    <link rel="icon" type="image/svg+xml" href="https://sequoia-portfolio.s3.amazonaws.com/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="skllc.css">
+
+    <!-- PWA (Progressive Web Application) tags -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name = "viewport" content = "width = 320, initial-scale = 1, user-scalable = no">
+
+    <meta name="apple-mobile-web-app-title" content="Sequoia">
+    <meta name="apple-touch-startup-image" content="Sequoia">
+
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="apple-touch-icon" href="portfolio/images/sequoiatree.png">
+    <link rel="mask-icon" href="portfolio/images/sequoiatree.png" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url"  content="https://sequoiakanies.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sequoia Kanies">
+    <meta property="og:description" content="Software Engineering Company">
+    <meta property="og:image" content="portfolio/images/EyeTerraEdit.png">
+</head>
+
+<body>
+    
+    <!-- Background wrapper -->
+    <div id="background-wrapper" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;">
+        <!-- Background will be applied via CSS -->
+    </div>
+    
+    <header>
+    <div class="menu-container">
+        
+        <button class="menu-button" id="menu-button" aria-label="Menu">
+            <img class="pic" src="portfolio/images/MenuIcon.png" alt="menu"/>
+        </button>
+    
+        <div id="menu-dropdown" class="menu-dropdown">
+          <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="contact-us/contact-us.html">Contact Us</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+        </ul>
+        </div>
+
+    </div>
+
+    <div style="position: fixed; top: 10px; right: 10px;">
+        <a href="index.html" class="link" style="background: none">
+            <button style="cursor: pointer; background: transparent; padding: 4px; padding-bottom: 0px; border-radius: 50%;">
+                <img src="portfolio/images/faviconcorner.png" alt="home">
+            </button>
+        </a>
+    </div>
+
+    </header>
+
+    <div style="padding-top: 7em;">
+        <br><br><br>
+        <img src="portfolio/images/favicon152.png" alt="logo"/>
+        <h1 style="margin-bottom: 5em;"><i>Sequoia Kanies LLC</i></h1>
+        <br><br>
+    </div>
+
+    <div class="main-container" style="text-align: center;">
+        <h1 style="margin-bottom: 2em;"><i>Resume</i></h1>
+        
+        <div style="background: rgba(0, 0, 0, 0.8); padding: 2em; border: 2px solid #737171; border-radius: 10px; margin: 1em auto; max-width: 400px;">
+            
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                <!-- Download Button -->
+                <a href="resume.pdf" download="Sequoia_Kanies_Resume.pdf" style="text-decoration: none; display: block; width: 100%; max-width: 300px;">
+                    <button class="contact-button" style="width: 100%; margin: 0; cursor: pointer;">
+                        Download Resume (PDF)
+                    </button>
+                </a>
+                
+                <!-- View Resume Button -->
+                <button class="contact-button" style="width: 100%; max-width: 300px; margin: 0; cursor: pointer;" onclick="openResumeModal()">
+                    Preview Resume
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" style="
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow: auto;
+    ">
+        <div style="
+            position: relative;
+            margin: 5% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            border: 2px solid #737171;
+        ">
+            <!-- Close Button -->
+            <span style="
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                color: #aaa;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 1001;
+            " onclick="closeResumeModal()">&times;</span>
+            
+            <!-- Resume Content -->
+            <div style="text-align: center; color: white;">
+                <h2 style="margin-bottom: 20px;">Sequoia Kanies - Resume</h2>
+                
+                <!-- Resume Preview -->
+                <div style="
+                    background: white;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin: 20px 0;
+                    min-height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                ">
+                    <iframe src="resume.pdf" style="
+                        width: 100%;
+                        height: 500px;
+                        border: none;
+                        border-radius: 5px;
+                    "></iframe>
+                </div>
+                
+                <!-- Download Button in Modal -->
+                <a href="resume.pdf" download="Sequoia_Kanies_Resume.pdf" style="text-decoration: none;">
+                    <button class="contact-button" style="margin: 10px;">
+                        Download Resume (PDF)
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openResumeModal() {
+            document.getElementById('resumeModal').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+        
+        function closeResumeModal() {
+            document.getElementById('resumeModal').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+        
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById('resumeModal');
+            if (event.target == modal) {
+                closeResumeModal();
+            }
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeResumeModal();
+            }
+        });
+    </script>
+
+    <footer class="s1" style="background-color: black; line-height: 1em;">
+
+        <div class="social-links" style="line-height: 1.6em;">
+            <br/>
+            <h3>Links</h3>
+    <!-- ****** There should be social media icons
+             and these should be business links! for SKLLC! -->
+                        <a href="resume.html">Software Engineering Resume</a>
+            <a target="_blank" href="https://github.com/ScrumMasterSequoia/">GitHub</a>
+            <a target="_blank" href="https://www.linkedin.com/in/sequoia-kanies-a402a228a/">LinkedIn</a>
+            <a target="_blank" href="https://github.com/ScrumMasterSequoia/PredictiveStockAnalyzer">UTC Senior Capstone</a>
+            <a target="_blank" href="https://www.cdtechies.com/">CD Techies</a>
+            <a target="_blank" href="https://www.youtube.com/@sequoiakanies2202/featured">YouTube</a>
+            <a target="_blank" href="https://www.instagram.com/sequoiakanies/">Personal Instagram</a>
+            <a target="_blank" href="https://www.instagram.com/sequoiatreesart/">Art Instagram</a>
+            <a target="_blank" href="https://www.tiktok.com/@sequoiatreesart">Art Tiktok</a>
+            <a target="_blank" href="https://www.facebook.com/BizzareArtBazzar/">Art Facebook</a>
+            <a target="_blank" href="https://opensea.io/SequoiaTrees">OpenSea</a>
+        </div>
+        
+
+    </footer>
+
+    <script src="skllc.js"></script>
+</body>
+</html> 
